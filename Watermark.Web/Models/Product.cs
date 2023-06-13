@@ -19,7 +19,7 @@ namespace Watermark.Web.Models
         [Range(1, 100)]
         public int Stock { get; set; }
         [StringLength(100)]
-        public string PictureUrl { get; set; }
+        public string ImageName { get; set; }
     }
 }
 
