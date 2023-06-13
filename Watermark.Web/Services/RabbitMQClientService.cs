@@ -17,7 +17,6 @@ namespace Watermark.Web.Services
         {
             _connectionFactory = connectionFactory;
             _logger = logger;
-            Connect();
         }
 
         public IModel Connect()
