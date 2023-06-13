@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RabbitMQ.Client;
+using Watermark.Web.BackgroundServices;
 using Watermark.Web.Models;
 using Watermark.Web.Services;
 
@@ -18,7 +19,7 @@ builder.Services.AddSingleton(sp => new ConnectionFactory()
 
 builder.Services.AddSingleton<RabbitMQClientService>();
 builder.Services.AddSingleton<RabbitMQPublisher>();
-
+builder.Services.AddHostedService<ImageWatermarkProcessBackgroundService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

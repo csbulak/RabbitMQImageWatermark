@@ -23,12 +23,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Services\" />
+    <None Remove="BackgroundServices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\images\watermarks\" />
+    <Folder Include="BackgroundServices\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\images\watermarks\" />
   </ItemGroup>
 </Project>
